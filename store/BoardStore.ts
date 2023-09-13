@@ -7,7 +7,7 @@ interface BoardState {
   board: Board;
   getBoard: () => void;
   setBoardState: (board: Board) => void;
-  addTask: (todo: String, columnId: TypedColumn, image?: File | null) => void;
+  addTask: (todo: string, columnId: TypedColumn, image?: File | null) => void;
   deleteTask: (taskIndex: number, todo: Todo, id: TypedColumn) => void;
   updateTodoInDB: (todo: Todo, columnId: TypedColumn) => void;
   newtaskInput: string;
@@ -29,7 +29,7 @@ export const useBoardStore = create<BoardState>((set, get) => ({
     set({ board });
   },
   setBoardState: (board) => set({ board }),
-  addTask: async (todo: String, columnId: TypedColumn, image?: File | null) => {
+  addTask: async (todo: string, columnId: TypedColumn, image?: File | null) => {
     let file: Image | undefined;
 
     if (image) {

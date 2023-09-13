@@ -6,7 +6,7 @@ import { useModalStore } from "@/store/ModalStore";
 
 type props = {
   id: TypedColumn;
-  todos: Todo;
+  todos: Todo[];
   index: number;
 };
 
