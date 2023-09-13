@@ -75,7 +75,7 @@ const Header = () => {
         <Image
           // src="https://links.papareact.com/c2cdd5"
           src="/assets/images/logo.png"
-          alt="Trello logo"
+          alt="KeepItUp logo"
           width={300}
           height={100}
           className="w-64 pb-10 md:pb-0 object-contain"
